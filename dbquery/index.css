@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+}
+html,body{
+	margin:0;
+	padding:0 15px;
+}
+.table-title{
+    margin:0;
+    padding:0px;
+}
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+    background-color: black;
+    color: white;
+}
+
+code{
+    display:inline-block;
+    border:1px solid black;
+    padding:15px;
+    margin:5px;
+    background:grey;
+}
+
+.example-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: row dense;
+}
+
+.example-container > *{
+    display: inline-block;
+}
+
+.database-display{
+	resize:vertical;
+	overflow:auto;
+}
